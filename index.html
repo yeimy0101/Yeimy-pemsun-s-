@@ -1,1 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malla Curricular Interactiva - Medicina</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
 
+    <header>
+        <h1>Malla Curricular - Medicina 🩺</h1>
+        <p>Haz clic en un ramo para marcarlo como aprobado. Los ramos se guardarán en tu navegador.</p>
+    </header>
+
+    <main id="malla-container" class="malla-container">
+
+        <div class="semestre">
+            <h2>Semestre 1</h2>
+            <div class="ramo" data-id="promocion-en-salud">Promoción en Salud</div>
+            <div class="ramo" data-id="microbiologia">Microbiología</div>
+            <div class="ramo" data-id="introduccion-a-la-clinica">Introducción a la Clínica</div>
+            <div class="ramo" data-id="lab-anatomia-humana-i">Lab Anatomía Humana I</div>
+            <div class="ramo" data-id="anatomia-humana-i">Anatomía Humana I</div>
+            <div class="ramo" data-id="lab-hist-gral-org-y-sist-human">Lab Hist Gral Org y Sist Human</div>
+            <div class="ramo" data-id="hist-gral-de-org-y-sist-human">Hist Gral de Org y Sist Human</div>
+            <div class="ramo" data-id="embriologia">Embriología</div>
+            <div class="ramo" data-id="lab-bioquimica-i">Lab Bioquímica I</div>
+            <div class="ramo" data-id="bioquimica-i">Bioquímica I</div>
+            <div class="ramo" data-id="lab-genetica-medica">Lab Genética Médica</div>
+            <div class="ramo" data-id="genetica-medica">1230 Genética Médica</div>
+        </div>
+
+        <div class="semestre">
+            <h2>Semestre 2</h2>
+            <div class="ramo" data-id="lab-salud-colectiva">Lab Salud Colectiva</div>
+            <div class="ramo" data-id="salud-colectiva">Salud Colectiva</div>
+            <div class="ramo" data-id="parasitologia" data-requisitos="microbiologia,lab-anatomia-humana-i,anatomia-humana-i">Parasitología</div>
+            <div class="ramo" data-id="lab-semiologia-medica">Lab Semiología Médica</div>
+            <div class="ramo" data-id="semiologia-medica">Semiología Médica</div>
+            <div class="ramo" data-id="psicologia-medica">Psicología Médica</div>
+            <div class="ramo" data-id="lab-anatomia-humana-ii" data-requisitos="lab-anatomia-humana-i,anatomia-humana-i">Lab Anatomía Humana II</div>
+            <div class="ramo" data-id="anatomia-humana-ii" data-requisitos="lab-anatomia-humana-i,anatomia-humana-i">Anatomía Humana II</div>
+            <div class="ramo" data-id="lab-fisiologia-humana-i">Lab Fisiología Humana I</div>
+            <div class="ramo" data-id="fisiologia-humana-i">Fisiología Humana I</div>
+            <div class="ramo" data-id="lab-bioquimica-ii" data-requisitos="lab-bioquimica-i,bioquimica-i">Lab Bioquímica II</div>
+            <div class="ramo" data-id="bioquimica-ii" data-requisitos="lab-bioquimica-i,bioquimica-i">Bioquímica II</div>
+        </div>
+
+        <div class="semestre">
+            <h2>Semestre 3</h2>
+            <div class="ramo" data-id="fisiopatologia" data-requisitos="lab-bioquimica-ii,bioquimica-ii,lab-fisiologia-humana-i,fisiologia-humana-i">Fisiopatología</div>
+            <div class="ramo" data-id="gerencia-y-politicas-de-salud" data-requisitos="lab-salud-colectiva,salud-colectiva">Gerencia y Políticas de Salud</div>
+            <div class="ramo" data-id="lab-epidemiologia" data-requisitos="lab-salud-colectiva,salud-colectiva">Lab Epidemiología</div>
+            <div class="ramo" data-id="epidemiologia" data-requisitos="lab-salud-colectiva,salud-colectiva">Epidemiología</div>
+            <div class="ramo" data-id="lab-semiologia-quirurgica" data-requisitos="lab-semiologia-medica,semiologia-medica">Lab Semiología Quirúrgica</div>
+            <div class="ramo" data-id="semiologia-quirurgica" data-requisitos="lab-semiologia-medica,semiologia-medica">Semiología Quirúrgica</div>
+            <div class="ramo" data-id="lab-neuroanatomia" data-requisitos="lab-anatomia-humana-ii,anatomia-humana-ii">Lab Neuroanatomía</div>
+            <div class="ramo" data-id="neuroanatomia" data-requisitos="lab-anatomia-humana-ii,anatomia-humana-ii">Neuroanatomía</div>
+            <div class="ramo" data-id="lab-anatomia-patologica-i" data-requisitos="lab-anatomia-humana-ii,anatomia-humana-ii">Lab Anatomía Patológica I</div>
+            <div class="ramo" data-id="anatomia-patologica-i" data-requisitos="lab-anatomia-humana-ii,anatomia-humana-ii">Anatomía Patológica I</div>
+            <div class="ramo" data-id="lab-fisiologia-humana-ii" data-requisitos="lab-fisiologia-humana-i,fisiologia-humana-i">Lab Fisiología Humana II</div>
+            <div class="ramo" data-id="fisiologia-humana-ii" data-requisitos="lab-fisiologia-humana-i,fisiologia-humana-i">Fisiología Humana II</div>
+        </div>
+        
+        <div class="semestre">
+            <h2>Semestre 4</h2>
+            <div class="ramo" data-id="evolucion-sociohistorica" data-requisitos="lab-epidemiologia,epidemiologia">Evolución Sociohistórica</div>
+            <div class="ramo" data-id="optativa-1">Asignatura Optativa</div>
+            <div class="ramo" data-id="sexologia-medica" data-requisitos="lab-anatomia-humana-ii,anatomia-humana-ii,psicologia-medica">Sexología Médica</div>
+            <div class="ramo" data-id="lab-anatomia-patologica-ii" data-requisitos="lab-anatomia-patologica-i,anatomia-patologica-i">Lab Anatomía Patológica II</div>
+            <div class="ramo" data-id="anatomia-patologica-ii" data-requisitos="lab-anatomia-patologica-i,anatomia-patologica-i">Anatomía Patológica II</div>
+            <div class="ramo" data-id="lab-farmacologia" data-requisitos="lab-bioquimica-ii,bioquimica-ii,lab-fisiologia-humana-i,fisiologia-humana-i">Lab Farmacología</div>
+            <div class="ramo" data-id="farmacologia" data-requisitos="lab-bioquimica-ii,bioquimica-ii,lab-fisiologia-humana-i,fisiologia-humana-i">Farmacología</div>
+            <div class="ramo" data-id="lab-fisiopatologia-ii" data-requisitos="fisiopatologia">Lab Fisiopatología II</div>
+            <div class="ramo" data-id="fisiopatologia-ii" data-requisitos="fisiopatologia">Fisiopatología II</div>
+            <div class="ramo" data-id="inmunologia-general" data-requisitos="lab-bioquimica-ii,bioquimica-ii,lab-anatomia-humana-ii,anatomia-humana-ii">Inmunología General</div>
+        </div>
+
+        <div class="semestre">
+            <h2>Semestre 5</h2>
+            <div class="ramo" data-id="imagenologia">Imagenología</div>
+            <div class="ramo" data-id="hematologia-medica">Hematología Médica</div>
+            <div class="ramo" data-id="lab-hematologia-medica">Lab Hematología Médica</div>
+            <div class="ramo" data-id="farmacoterapeutica" data-requisitos="lab-farmacologia,farmacologia">Farmacoterapeutica</div>
+            <div class="ramo" data-id="lab-farmacoterapeutica" data-requisitos="lab-farmacologia,farmacologia">Lab Farmacoterapeutica</div>
+            <div class="ramo" data-id="cirugia-general">Cirugía General</div>
+            <div class="ramo" data-id="infectologia">Infectología</div>
+            <div class="ramo" data-id="optativa-2">Asignatura Optativa</div>
+            <div class="ramo" data-id="bioetica-y-normativas-en-salud">Bioética y Normativas en Salud</div>
+        </div>
+
+        <div class="semestre">
+            <h2>Semestre 6</h2>
+            <div class="ramo" data-id="endocrinologia" data-requisitos="fisiopatologia,fisiopatologia-ii,lab-bioquimica-ii,bioquimica-ii,lab-fisiologia-humana-i,fisiologia-humana-i">Endocrinología</div>
+            <div class="ramo" data-id="lab-endocrinologia" data-requisitos="fisiopatologia,fisiopatologia-ii,lab-bioquimica-ii,bioquimica-ii,lab-fisiologia-humana-i,fisiologia-humana-i">Lab Endocrinología</div>
+            <div class="ramo" data-id="nefrologia" data-requisitos="imagenologia">Nefrología</div>
+            <div class="ramo" data-id="psiquiatria">Psiquiatría</div>
+            <div class="ramo" data-id="lab-psiquiatria">Lab Psiquiatría</div>
+            <div class="ramo" data-id="dermatologia" data-requisitos="infectologia">Dermatología</div>
+            <div class="ramo" data-id="oftalmologia" data-requisitos="imagenologia,cirugia-general">Oftalmología</div>
+            <div class="ramo" data-id="lab-oftalmologia" data-requisitos="imagenologia,cirugia-general">Lab Oftalmología</div>
+            <div class="ramo" data-id="neurologia" data-requisitos="imagenologia">Neurología</div>
+            <div class="ramo" data-id="lab-neurologia" data-requisitos="imagenologia">Lab Neurología</div>
+            <div class="ramo" data-id="cardiologia" data-requisitos="imagenologia,cirugia-general">Cardiología</div>
+            <div class="ramo" data-id="lab-cardiologia" data-requisitos="imagenologia,cirugia-general">Lab Cardiología</div>
+            <div class="ramo" data-id="pneumopatologia" data-requisitos="imagenologia,cirugia-general">Pneumopatología</div>
+            <div class="ramo" data-id="lab-pneumopatologia" data-requisitos="imagenologia,cirugia-general">Lab Pneumopatología</div>
+            <div class="ramo" data-id="gastroenterologia" data-requisitos="imagenologia">Gastroenterología</div>
+            <div class="ramo" data-id="medicina-forense">Medicina Forense</div>
+            <div class="ramo" data-id="lab-medicina-forense">Lab Medicina Forense</div>
+        </div>
+        
+        <div class="semestre">
+            <h2>Semestre 7</h2>
+            <div class="ramo" data-id="lab-otorrinolaringologia" data-requisitos="imagenologia,cirugia-general">Lab Otorrinolaringología</div>
+            <div class="ramo" data-id="otorrinolaringologia" data-requisitos="imagenologia,cirugia-general">Otorrinolaringología</div>
+            <div class="ramo" data-id="anestesiologia" data-requisitos="pneumopatologia,lab-pneumopatologia">Anestesiología</div>
+            <div class="ramo" data-id="neurocirugia">Neurocirugía</div>
+            <div class="ramo" data-id="nutricion-medicina" data-requisitos="imagenologia,cirugia-general">Nutrición (Medicina)</div>
+            <div class="ramo" data-id="optativa-3">Asignatura Optativa</div>
+            <div class="ramo" data-id="oncologia" data-requisitos="imagenologia,cirugia-general">Oncología</div>
+            <div class="ramo" data-id="lab-urologia" data-requisitos="imagenologia,cirugia-general,nefrologia">Lab Urología</div>
+            <div class="ramo" data-id="urologia" data-requisitos="imagenologia,cirugia-general,nefrologia">Urología</div>
+            <div class="ramo" data-id="lab-traumatologia-y-ortopedia" data-requisitos="imagenologia,cirugia-general">Lab Traumatología y Ortopedia</div>
+            <div class="ramo" data-id="traumatologia-y-ortopedia" data-requisitos="imagenologia,cirugia-general">Traumatología y Ortopedia</div>
+        </div>
+        
+        <div class="semestre">
+            <h2>Semestre 8 PRE-INT</h2>
+            <div class="ramo" data-id="pediatria-y-neonatologia">Pediatría y Neonatología</div>
+            <div class="ramo" data-id="gineco-obstetricia">Gíneco-Obstetricia</div>
+            <div class="ramo" data-id="emergencias-medicas">Emergencias Médicas</div>
+            <div class="ramo" data-id="metod-de-la-invest-en-salud">Metod De La Invest En Salud</div>
+        </div>
+
+        <div class="semestre">
+            <h2>Internado Rotatorio</h2>
+            <div class="ramo" data-id="clinica-pediatrica">Clínica Pediátrica</div>
+            <div class="ramo" data-id="clinica-medico-psiquiatrica">Clínica Médico Psiquiátrica</div>
+            <div class="ramo" data-id="clinica-gineco-obstetrica">Clínica Gíneco - Obstétrica</div>
+            <div class="ramo" data-id="med-quirurgica-y-traumatologia">Med Quirúrgica y Traumatología</div>
+            <div class="ramo" data-id="medicina-interna">Medicina Interna</div>
+            <div class="ramo" data-id="salud-publica">Salud Pública</div>
+        </div>
+
+    </main>
+
+    <div id="modal-requisitos" class="modal-oculto">
+        <div class="modal-contenido">
+            <span class="cerrar-modal">&times;</span>
+            <h3 id="modal-titulo">Ramo Bloqueado</h3>
+            <p>Para aprobar este ramo, primero necesitas aprobar:</p>
+            <ul id="lista-requisitos">
+                </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
